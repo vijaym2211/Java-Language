@@ -1,4 +1,4 @@
-package adder_subtractor;
+package mutex_synchronized.adder_subtractor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

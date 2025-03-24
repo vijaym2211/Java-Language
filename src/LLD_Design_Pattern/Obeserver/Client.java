@@ -6,7 +6,19 @@ public class Client {
 
         Publisher.getInstance().placeOrder();
         System.out.println("------------------");
+
         new BillingPlaceOrderEventHandler();
         Publisher.getInstance().placeOrder();
+
+        System.out.println("------------------");
+        EventHandler temp = new InventoryPlaceOrderEventHandler();
+        Publisher.getInstance().placeOrder();
+
+        System.out.println("------------------");
+
+        Publisher.getInstance().deregister(temp);
+        Publisher.getInstance().placeOrder();
+
+
     }
 }

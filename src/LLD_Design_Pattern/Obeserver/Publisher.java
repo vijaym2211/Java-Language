@@ -8,11 +8,11 @@ public class Publisher {
 
     private List<EventHandler> eventHandlerList;
 
+    //    Sigleton Design Pattern -->
     private Publisher(){
         eventHandlerList = new ArrayList<>();
     }
 
-//    Sigleton Design Pattern -->
     private static Publisher Instance = null;;
     public static Publisher getInstance(){
         if(Instance == null){
